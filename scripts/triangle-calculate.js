@@ -8,7 +8,7 @@
  * 
  */
 
-function calculateTriangleArea(){
+function calculateTriangleArea() {
     // get triangle base value
     const triangleBaseInput = document.getElementById('triangle-base');
     const triangleBaseText = triangleBaseInput.value;
@@ -28,4 +28,6 @@ function calculateTriangleArea(){
     // display triangle area
     const triangleAreaSpan = document.getElementById('triangle-area');
     triangleAreaSpan.innerText = area;
+
+    addToCalculationEntry('Triangle', area);
 }
